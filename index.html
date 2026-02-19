@@ -5,12 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Project: Etch-a-Sketch</title>
+    <title> Project: Etch-a-Sketch</title>
 </head>
 
 <body>
-    <div id="container">
-        <!--Append the Child-->
+    <nav id="upper">
+        <h1> 📝 Project: Etch -A- Sketch 🏝️</h1>
+    </nav>
+    <div id="mainContainer">
+        <div id="toolContainer">
+            Current Grid Size: 00x00
+            <button id="optionOne">Change Grid Dimension</button>
+            <p style="display: flex;align-items: center; justify-content: center;">Pick a Color: <input type="color" id="favcolor" name="favcolor" value="#000000"></p>
+            <button id="optionThree">Change Paint to Black</button>
+            <button id="clearCanvas">Clear Canvas</button>
+
+        </div>
+        <div id="paintContainer">
+            <!--Append the Child-->
+        </div>
     </div>
     <script src="./script/script.js"></script>
 </body>

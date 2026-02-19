@@ -1,5 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#mainContainer {
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 0;
+    text-align: center;
+}
+
+#upper {
+    text-align: center;
+    padding: 2.3rem 0;
+    background-image: url('../image/aesthetic-beach-background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#upper h1 {
+    font-size: 45px;
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "EDPT" 97,
+        "EHLT" 14;
+}
+
+#toolContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    gap: 25px;
+}
+
+#toolContainer button {
+    padding: 8px 45px;
+    cursor: pointer;
+}
+
+#paintContainer {
+    background-color: blue;
+    border: 10px solid rgb(179, 44, 44);
+    height: 450px;
+    width: 500px;
 }
