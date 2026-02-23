@@ -10,22 +10,24 @@
 
 <body>
     <nav id="upper">
-        <h1> 📝 Project: Etch -A- Sketch 🏝️</h1>
+        <h1> 📝 Project: Etch -A- Sketch</h1>
     </nav>
     <div id="mainContainer">
         <div id="toolContainer">
-            Current Grid Size: 00x00
-            <button id="optionOne">Change Grid Dimension</button>
-            <p style="display: flex;align-items: center; justify-content: center;">Pick a Color: <input type="color" id="favcolor" name="favcolor" value="#000000"></p>
-            <button id="optionThree">Change Paint to Black</button>
+            <p style="color: white; font-weight: bold;">Current Grid Size: <span>16x16</span></p>
+            <button id="setGrid">Set Grid Dimension</button>
+            <button id="setBlack">Change Paint to Black</button>
+            <button id="setRainbow">Change Paint to Rainbox</button>
             <button id="clearCanvas">Clear Canvas</button>
 
         </div>
         <div id="paintContainer">
-            <!--Append the Child-->
+            <!--Append the Child
+            <h1 style="color: white; text-align: center; " >No Grid Dimension set</h1>
+        -->
         </div>
     </div>
-    <script src="./script/script.js"></script>
+    <script src="./script/script.js" defer></script>
 </body>
 
 </html>

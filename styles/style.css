@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    background-image: url('../image/b-926.jpg');
 }
 
 #mainContainer {
     display: flex;
-    gap: 75px;
+    gap: 15rem;
     justify-content: center;
     align-items: center;
     margin: 7rem 0;
@@ -24,13 +27,11 @@ body {
 #upper {
     text-align: center;
     padding: 2.3rem 0;
-    background-image: url('../image/aesthetic-beach-background.jpg');
-    background-position: center;
-    background-size: cover;
+    backdrop-filter: blur(4px);
 }
 
 #upper h1 {
-    font-size: 45px;
+    font-size: 55px;
     font-family: "Nabla", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -48,14 +49,50 @@ body {
     gap: 25px;
 }
 
-#toolContainer button {
-    padding: 8px 45px;
-    cursor: pointer;
+#setGrid {
+    background-color: rgb(81, 215, 90);
+    transition: 0.3s;
+}
+#setRainbow {
+    background-color: chocolate;
+    transition: 0.3s;
+}
+#clearCanvas {
+    background-color: cadetblue;
+    transition: 0.3s;
 }
 
+
+#toolContainer button {
+    padding: 18px 45px;
+    cursor: pointer;
+    border-radius: 28px;
+    border: 2px solid black;
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+#toolContainer button:hover {
+    background-color: rgb(255, 206, 27);
+}
+
+
+/*Container for paint*/
 #paintContainer {
-    background-color: blue;
-    border: 10px solid rgb(179, 44, 44);
-    height: 450px;
-    width: 500px;
+    margin-top: 15px;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: auto;
+    border: 3.5px solid black;
+    height: 600px;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+.dimension {
+    border: 1px solid black;
+    box-sizing: border-box;
 }
